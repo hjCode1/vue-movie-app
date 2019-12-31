@@ -1,19 +1,14 @@
-# vueflix
+# vuecha play
 
-## Project setup
+## Configuration
 ```
-npm install
+vue
+vue-cli
+vuex
+router
 ```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Reference
+https://hackernoon.com/building-a-movie-app-interface-with-vue-js-cdc8aeb5db0b

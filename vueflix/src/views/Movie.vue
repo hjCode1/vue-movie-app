@@ -1,7 +1,7 @@
 <template>
   <div
     :style="{ 'background-image': selectedMovie.largeImgSrc }"
-    :class="[{ 'favorite' : !selectedMovie.favorite }, 'wrap']"
+    :class="[{ 'favorite' : selectedMovie.favorite }, 'wrap']"
   >
     <header class="nav">
       <router-link to="/" class="btn_home">Home</router-link>
@@ -23,8 +23,8 @@
         class="btn_play"
       >Play</router-link>
       <button class="btn_favorite" @click="addFavorite(selectedMovie)">
-        <span v-show="selectedMovie.favorite">Add to</span>
-        <span v-show="!selectedMovie.favorite">Remove from</span>
+        <span v-show="!selectedMovie.favorite">Add to</span>
+        <span v-show="selectedMovie.favorite">Remove from</span>
         Favorite
       </button>
     </div>
